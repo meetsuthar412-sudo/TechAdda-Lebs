@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects — TechAdda Labs</title>
+<meta name="description" content="Selected projects across AI, SaaS, CRM, web, apps, and design.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="projects.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+<div class="loader"><div class="loader-logo">TechAdda</div></div>
+<div class="cursor"></div><div class="cursor-ring"></div>
+
+<nav class="nav scrolled"><div class="container nav-inner">
+  <a href="../home/home.html" class="logo"><img src="../assets/visuals/techaddalabs-mark.svg" alt="" class="logo-mark">TechAdda<span style="color:var(--text-muted);font-weight:400"> Labs</span></a>
+  <div class="nav-links"><a href="../home/home.html">Home</a><a href="../about/about.html">About</a><a href="../services/services.html">Services</a><a href="projects.html" class="active">Projects</a><a href="../portfolio/portfolio.html">Portfolio</a><a href="../skills/skills.html">Skills</a><a href="../experience/experience.html">Experience</a><a href="../archive/archive.html">Archive</a><a href="../blog/blog.html">Blog</a></div>
+  <div class="nav-cta"><a href="../contact/contact.html" class="btn btn-primary">Start a Project <span class="arrow">→</span></a><button class="menu-toggle" aria-label="Menu"><span></span></button></div>
+</div></nav>
+<div class="mobile-menu"><a href="../home/home.html">Home</a><a href="../about/about.html">About</a><a href="../services/services.html">Services</a><a href="projects.html">Projects</a><a href="../portfolio/portfolio.html">Portfolio</a><a href="../skills/skills.html">Skills</a><a href="../experience/experience.html">Experience</a><a href="../archive/archive.html">Archive</a><a href="../blog/blog.html">Blog</a><a href="../contact/contact.html">Contact</a></div>
+
+<header class="page-hero container">
+  <div class="eyebrow reveal"><span class="dot"></span>Projects</div>
+  <h1 class="reveal">Selected work across <span class="gradient-text">AI, SaaS, CRM, web & design.</span></h1>
+  <p class="reveal">Real projects we've built, plus representative concept projects showing the range of what we can deliver.</p>
+</header>
+
+<section>
+  <div class="container">
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-f="all">All</button>
+      <button class="filter" data-f="ai">AI</button>
+      <button class="filter" data-f="saas">SaaS</button>
+      <button class="filter" data-f="crm">CRM</button>
+      <button class="filter" data-f="web">Web</button>
+      <button class="filter" data-f="app">Apps</button>
+      <button class="filter" data-f="design">Design</button>
+    </div>
+    <div class="projects-grid reveal-stagger" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-inner">
+    <button class="modal-close" id="modal-close"><i data-lucide="x"></i></button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><a href="../home/home.html" class="logo" style="margin-bottom:20px"><img src="../assets/visuals/techaddalabs-mark.svg" alt="" class="logo-mark">TechAdda<span style="color:var(--text-muted);font-weight:400"> Labs</span></a><p>A digital product studio.</p><p style="margin-top:20px;font-size:.9rem"><strong style="color:var(--text)">Meet Suthar</strong> — Founder<br><strong style="color:var(--text)">Piyush Prajapati</strong> — Co-Founder</p></div>
+      <div class="footer-col"><h4>Studio</h4><a href="../about/about.html">About</a><a href="../experience/experience.html">Experience</a><a href="../skills/skills.html">Skills</a><a href="../archive/archive.html">Archive</a></div>
+      <div class="footer-col"><h4>Work</h4><a href="../services/services.html">Services</a><a href="projects.html">Projects</a><a href="../portfolio/portfolio.html">Portfolio</a><a href="../blog/blog.html">Blog</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="../contact/contact.html">Start a Project</a><a href="mailto:hello@techaddalabs.com">hello@techaddalabs.com</a></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 TechAdda Labs. All rights reserved.</div><div>Have an idea? <a href="../contact/contact.html" style="color:var(--accent)">Let's build it →</a></div></div>
+  </div>
+</footer>
+
+<script src="../js/global.js"></script><script src="projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.about-grid .card{padding:36px}
+.about-grid .card i{width:32px;height:32px;color:var(--accent);margin-bottom:20px}
+.about-grid .card h3{margin-bottom:10px}
+@media(max-width:1024px){.about-grid{grid-template-columns:1fr}}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.founder{text-align:center;padding:50px 30px}
+.founder-avatar{width:100px;height:100px;border-radius:50%;margin:0 auto 24px;display:grid;place-items:center;font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:600;color:#0a0a0f}
+.founder h3{font-size:1.5rem;margin-bottom:6px}
+.founder .role{color:var(--accent);font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+@media(max-width:768px){.founders{grid-template-columns:1fr}}
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.role-card{padding:28px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);transition:all .4s var(--ease);text-align:center}
+.role-card:hover{border-color:var(--accent);transform:translateY(-4px)}
+.role-card i{width:28px;height:28px;color:var(--accent);margin:0 auto 14px}
+.role-card h4{font-size:1rem;font-weight:500}
+@media(max-width:1024px){.roles{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.roles{grid-template-columns:1fr}.role-card{padding:20px}}
+.timeline{position:relative;padding-left:40px;border-left:1px solid var(--border)}
+.tl-item{position:relative;padding:0 0 50px 30px}
+.tl-item::before{content:"";position:absolute;left:-46px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--grad);box-shadow:0 0 20px var(--accent)}
+.tl-year{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;color:var(--accent);letter-spacing:.1em;margin-bottom:8px}
+.tl-item h4{font-size:1.35rem;margin-bottom:8px}
+.cta-section{padding:80px 0 120px}
+.cta-card{padding:80px 60px;border-radius:var(--radius-lg);background:var(--grad-soft);border:1px solid var(--border-2);text-align:center}
+.cta-card h2{margin-bottom:30px}
+@media(max-width:640px){.cta-card{padding:50px 24px}}

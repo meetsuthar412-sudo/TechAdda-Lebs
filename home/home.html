@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TechAdda Labs — Digital Product Studio | AI • Software • Web • Apps • Design</title>
+<meta name="description" content="TechAdda Labs designs, builds and delivers modern websites, applications, AI systems, business software, CRM platforms and creative digital experiences.">
+<meta property="og:title" content="TechAdda Labs — Digital Product Studio">
+<meta property="og:description" content="AI • Software • Web • Apps • Design. We build digital products that move businesses forward.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="home.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+<div class="loader"><div class="loader-logo">TechAdda</div></div>
+<div class="cursor"></div><div class="cursor-ring"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="home.html" class="logo"><img src="../assets/visuals/techaddalabs-mark.svg" alt="" class="logo-mark">TechAdda<span style="color:var(--text-muted);font-weight:400"> Labs</span></a>
+    <div class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="../about/about.html">About</a>
+      <a href="../services/services.html">Services</a>
+      <a href="../projects/projects.html">Projects</a>
+      <a href="../portfolio/portfolio.html">Portfolio</a>
+      <a href="../skills/skills.html">Skills</a>
+      <a href="../experience/experience.html">Experience</a>
+      <a href="../archive/archive.html">Archive</a>
+      <a href="../blog/blog.html">Blog</a>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact/contact.html" class="btn btn-primary">Start a Project <span class="arrow">→</span></a>
+      <button class="menu-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="home.html">Home</a><a href="../about/about.html">About</a><a href="../services/services.html">Services</a>
+  <a href="../projects/projects.html">Projects</a><a href="../portfolio/portfolio.html">Portfolio</a>
+  <a href="../skills/skills.html">Skills</a><a href="../experience/experience.html">Experience</a>
+  <a href="../archive/archive.html">Archive</a><a href="../blog/blog.html">Blog</a>
+  <a href="../contact/contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-photos" aria-hidden="true">
+    <div class="hero-photo is-active"><img src="../assets/image/home-coding.webp" alt="" fetchpriority="high"></div>
+    <div class="hero-photo"><img src="../assets/image/home-ai-ml.webp" alt="" loading="eager"></div>
+  </div>
+  <div class="hero-network" aria-hidden="true">
+    <div class="network-orbit orbit-one"></div><div class="network-orbit orbit-two"></div>
+    <div class="network-core"></div><span class="network-node node-one"></span>
+    <span class="network-node node-two"></span><span class="network-node node-three"></span>
+  </div>
+  <div class="hero-grid"></div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow reveal"><span class="dot"></span>Digital Product Studio · Est. 2022</div>
+      <h1 class="reveal">We Build Digital Products <span class="gradient-text">That Move Businesses Forward.</span></h1>
+      <p class="hero-sub reveal">AI · Software · Web · Apps · Design</p>
+      <p class="hero-desc reveal">We design and build modern websites, applications, AI systems, business software, CRM platforms, and digital experiences for startups, businesses, and individuals.</p>
+      <div class="hero-cta reveal">
+        <a href="../contact/contact.html" class="btn btn-primary">Start a Project <span class="arrow">→</span></a>
+        <a href="../projects/projects.html" class="btn btn-ghost">View Our Work</a>
+      </div>
+    </div>
+    <div class="hero-meta reveal">
+      <div><strong>250+</strong><span>Websites</span></div>
+      <div><strong>50+</strong><span>Applications</span></div>
+      <div><strong>10+</strong><span>Software Systems</span></div>
+      <div><strong>400+</strong><span>Designs</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- CAPABILITY STRIP -->
+<section class="strip">
+  <div class="strip-track">
+    <div class="strip-item">AI</div><div class="strip-item">Software</div><div class="strip-item">Web</div>
+    <div class="strip-item">Apps</div><div class="strip-item">CRM</div><div class="strip-item">Design</div>
+    <div class="strip-item">Automation</div><div class="strip-item">AI</div><div class="strip-item">Software</div>
+    <div class="strip-item">Web</div><div class="strip-item">Apps</div><div class="strip-item">CRM</div>
+    <div class="strip-item">Design</div><div class="strip-item">Automation</div>
+  </div>
+</section>
+
+<!-- WHAT WE BUILD -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="dot"></span>What We Build</div>
+      <h2 style="margin-top:20px">End-to-end digital products,<br><span class="gradient-text">crafted by a full team.</span></h2>
+    </div>
+    <div class="build-grid reveal-stagger">
+      <div class="card build-card"><i data-lucide="brain-circuit"></i><h3>AI Products</h3><p>AI assistants, SaaS, RAG systems, agents, and LLM-powered applications built for real workflows.</p></div>
+      <div class="card build-card"><i data-lucide="globe"></i><h3>Websites</h3><p>Premium marketing sites, portfolios, landing pages, and corporate websites that convert.</p></div>
+      <div class="card build-card"><i data-lucide="layout-dashboard"></i><h3>Web Applications</h3><p>Complex dashboards, SaaS platforms, and internal tools engineered for scale.</p></div>
+      <div class="card build-card"><i data-lucide="smartphone"></i><h3>Mobile Applications</h3><p>Native-feeling iOS & Android apps with modern UX and reliable backends.</p></div>
+      <div class="card build-card"><i data-lucide="server"></i><h3>Business Software</h3><p>Custom software systems tailored to your operations, data, and workflows.</p></div>
+      <div class="card build-card"><i data-lucide="users"></i><h3>CRM Systems</h3><p>CRM platforms that actually fit how your team sells, supports, and grows.</p></div>
+      <div class="card build-card"><i data-lucide="cloud"></i><h3>SaaS Products</h3><p>From boilerplate to production — multi-tenant SaaS built to launch and scale.</p></div>
+      <div class="card build-card"><i data-lucide="palette"></i><h3>Creative Design</h3><p>Brand identity, UI/UX, posters, social media, and visual systems that stand out.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid reveal-stagger">
+      <div class="stat"><div class="stat-num" data-count="250" data-suffix="+">0</div><div class="stat-label">Websites Delivered</div></div>
+      <div class="stat"><div class="stat-num" data-count="50" data-suffix="+">0</div><div class="stat-label">Apps Delivered</div></div>
+      <div class="stat"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-label">Software Systems Delivered</div></div>
+      <div class="stat"><div class="stat-num" data-count="400" data-suffix="+">0</div><div class="stat-label">Creative Designs Delivered</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section>
+  <div class="container">
+    <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:20px">
+      <div>
+        <div class="eyebrow"><span class="dot"></span>Featured Projects</div>
+        <h2 style="margin-top:20px">Selected work.</h2>
+      </div>
+      <a href="../projects/projects.html" class="btn btn-ghost">All Projects →</a>
+    </div>
+    <div class="projects-grid reveal-stagger" id="featured-projects"></div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="dot"></span>Services</div>
+      <h2 style="margin-top:20px">Everything you need,<br><span class="gradient-text">under one roof.</span></h2>
+    </div>
+    <div class="services-preview reveal-stagger">
+      <a href="../services/services.html" class="service-tile"><span>01</span><h3>Software Development</h3><i data-lucide="code-2"></i></a>
+      <a href="../services/services.html" class="service-tile"><span>02</span><h3>Website Development</h3><i data-lucide="globe"></i></a>
+      <a href="../services/services.html" class="service-tile"><span>03</span><h3>Application Development</h3><i data-lucide="smartphone"></i></a>
+      <a href="../services/services.html" class="service-tile"><span>04</span><h3>AI Development</h3><i data-lucide="brain-circuit"></i></a>
+      <a href="../services/services.html" class="service-tile"><span>05</span><h3>CRM Development</h3><i data-lucide="users"></i></a>
+      <a href="../services/services.html" class="service-tile"><span>06</span><h3>UI/UX Design</h3><i data-lucide="pen-tool"></i></a>
+      <a href="../services/services.html" class="service-tile"><span>07</span><h3>Graphic Design</h3><i data-lucide="palette"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="dot"></span>Our Process</div>
+      <h2 style="margin-top:20px">From idea to launch,<br><span class="gradient-text">in seven clear steps.</span></h2>
+    </div>
+    <div class="process-grid reveal-stagger">
+      <div class="process-step"><span>01</span><h4>Discover</h4><p>We listen, research and define the problem.</p></div>
+      <div class="process-step"><span>02</span><h4>Plan</h4><p>Scope, architecture and a realistic roadmap.</p></div>
+      <div class="process-step"><span>03</span><h4>Design</h4><p>Interfaces, systems and brand that feel right.</p></div>
+      <div class="process-step"><span>04</span><h4>Build</h4><p>Clean code, reviewed and shipped in sprints.</p></div>
+      <div class="process-step"><span>05</span><h4>Test</h4><p>QA, performance and real-world validation.</p></div>
+      <div class="process-step"><span>06</span><h4>Launch</h4><p>Deployment, monitoring and go-live support.</p></div>
+      <div class="process-step"><span>07</span><h4>Support</h4><p>Ongoing iteration, improvements and care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="dot"></span>The Team</div>
+      <h2 style="margin-top:20px">Led by founders,<br><span class="gradient-text">built by a full team.</span></h2>
+      <p style="margin-top:20px;max-width:60ch">A multidisciplinary team building modern digital products, AI solutions, software systems, websites, applications, and creative experiences for businesses and individuals.</p>
+    </div>
+    <div class="founders-grid reveal-stagger">
+      <div class="card founder">
+        <div class="founder-avatar" style="background:linear-gradient(135deg,#00d4ff,#0ea5e9)"><span>MS</span></div>
+        <h3>Meet Suthar</h3>
+        <p class="role">Founder</p>
+        <p>Leads product vision, architecture and client partnerships across AI, software and web.</p>
+        <div class="social-links" aria-label="Meet Suthar's GitHub profile">
+          <a href="https://github.com/meetsuthar412-sudo" target="_blank" rel="noopener noreferrer" aria-label="Meet Suthar on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.29-1.24-1.64-1.24-1.64-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.92.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.24-5.1 5.51.4.35.76 1.03.76 2.08v3.07c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg></a>
+        </div>
+      </div>
+      <div class="card founder">
+        <div class="founder-avatar" style="background:linear-gradient(135deg,#a855f7,#ec4899)"><span>PP</span></div>
+        <h3>Piyush Prajapati</h3>
+        <p class="role">Co-Founder</p>
+        <p>Leads engineering execution, design systems and delivery across projects.</p>
+        <div class="social-links" aria-label="Piyush Prajapati's LinkedIn profile">
+          <a href="https://www.linkedin.com/in/piyush-prajapati-2837322a5/?skipRedirect=true" target="_blank" rel="noopener noreferrer" aria-label="Piyush Prajapati on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.36V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="team-roles reveal" style="margin-top:60px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+      <span class="role-chip">AI Engineers</span><span class="role-chip">Software Developers</span>
+      <span class="role-chip">Web Developers</span><span class="role-chip">App Developers</span>
+      <span class="role-chip">UI/UX Designers</span><span class="role-chip">Graphic Designers</span>
+      <span class="role-chip">QA Engineers</span><span class="role-chip">Project Specialists</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card reveal">
+      <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+      <p>Tell us about your project — we'll reply within a business day with next steps.</p>
+      <a href="../contact/contact.html" class="btn btn-primary">Start Your Project <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="home.html" class="logo" style="margin-bottom:20px"><img src="../assets/visuals/techaddalabs-mark.svg" alt="" class="logo-mark">TechAdda<span style="color:var(--text-muted);font-weight:400"> Labs</span></a>
+        <p style="max-width:36ch">A digital product studio building AI, software, web, apps, and creative work for businesses and individuals.</p>
+        <p style="margin-top:20px;font-size:.9rem"><strong style="color:var(--text)">Meet Suthar</strong> — Founder<br><strong style="color:var(--text)">Piyush Prajapati</strong> — Co-Founder</p>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><a href="../about/about.html">About</a><a href="../experience/experience.html">Experience</a><a href="../skills/skills.html">Skills</a><a href="../archive/archive.html">Archive</a></div>
+      <div class="footer-col"><h4>Work</h4><a href="../services/services.html">Services</a><a href="../projects/projects.html">Projects</a><a href="../portfolio/portfolio.html">Portfolio</a><a href="../blog/blog.html">Blog</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="../contact/contact.html">Start a Project</a><a href="mailto:hello@techaddalabs.com">hello@techaddalabs.com</a></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 TechAdda Labs. All rights reserved.</div>
+      <div>Have an idea? <a href="../contact/contact.html" style="color:var(--accent)">Let's build it →</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/global.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

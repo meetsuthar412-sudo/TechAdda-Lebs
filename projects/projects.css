@@ -1,0 +1,55 @@
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.filter{padding:10px 20px;border:1px solid var(--border);border-radius:100px;font-size:.85rem;color:var(--text-dim);background:var(--surface);transition:all .3s var(--ease)}
+.filter:hover{color:var(--text);border-color:var(--border-2)}
+.filter.active{background:var(--grad);color:#0a0a0f;border-color:transparent;font-weight:600}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.project-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--surface);border:1px solid var(--border);transition:all .5s var(--ease);cursor:pointer;display:flex;flex-direction:column}
+.project-card:hover{transform:translateY(-6px);border-color:var(--border-2);box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.project-card.hide{display:none}
+.project-thumb{aspect-ratio:16/10;position:relative;overflow:hidden;display:grid;place-items:center}
+.project-thumb svg{width:100%;height:100%;position:absolute;inset:0;opacity:.35}
+.project-thumb .badge{position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:100px;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(255,255,255,.15)}
+.project-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.project-cat{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.project-body h3{font-size:1.25rem;margin-bottom:8px}
+.project-body p{font-size:.9rem;color:var(--text-dim);margin-bottom:16px;flex:1}
+.project-meta{display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid var(--border);font-size:.8rem;color:var(--text-muted)}
+.project-meta .tech{display:flex;gap:6px;flex-wrap:wrap}
+.project-meta .tech span{padding:3px 10px;border:1px solid var(--border);border-radius:100px}
+@media(max-width:1024px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.projects-grid{grid-template-columns:1fr}}
+
+/* MODAL */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(20px);z-index:200;display:grid;place-items:center;padding:40px 20px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease);overflow-y:auto}
+.modal.open{opacity:1;pointer-events:auto}
+.modal-inner{background:var(--bg-2);border:1px solid var(--border-2);border-radius:var(--radius-lg);max-width:900px;width:100%;max-height:90vh;overflow-y:auto;padding:50px;position:relative}
+.modal-close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;transition:all .3s}
+.modal-close:hover{background:var(--grad);color:#0a0a0f;border-color:transparent}
+.modal-close i{width:20px;height:20px}
+.modal-hero{aspect-ratio:16/8;border-radius:var(--radius);margin-bottom:30px;display:grid;place-items:center;position:relative;overflow:hidden}
+.modal-hero svg{width:100%;height:100%;position:absolute;inset:0;opacity:.3}
+.modal h2{font-size:2rem;margin-bottom:10px}
+.modal .modal-cat{color:var(--accent);font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:block}
+.modal-section{margin-top:30px;padding-top:30px;border-top:1px solid var(--border)}
+.modal-section h4{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;font-weight:500;font-family:'Inter',sans-serif}
+.modal-section ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.modal-section li{padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;font-size:.9rem}
+@media(max-width:640px){.modal-inner{padding:30px 20px}.modal-section ul{grid-template-columns:1fr}}
+/* Project Images */
+.project-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .5s var(--ease);
+}
+
+.project-card:hover .project-thumb img{
+  transform:scale(1.05);
+}
+
+.modal-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:var(--radius);
+}
