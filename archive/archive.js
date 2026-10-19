@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+(()=>{
   const cats=[
     {t:'Web Archive',c:'80+',image:'../assets/visuals/archive/archive-web.svg'},
     {t:'App Archive',c:'25+',image:'../assets/visuals/archive/archive-app.svg'},
@@ -18,4 +18,4 @@ document.addEventListener('DOMContentLoaded',()=>{
         <div class="archive-image"><img src="${c.image}" alt="${c.t}" loading="lazy"></div>
       </div>
     </div>`).join('');
-});
+})();
