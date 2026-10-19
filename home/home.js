@@ -1,17 +1,6 @@
-/* ============ HOME: HERO + GSAP + PROJECTS ============ */
-document.addEventListener('DOMContentLoaded',()=>{
+/* ============ HOME: HERO + PROJECTS ============ */
+(()=>{
   if(window.lucide) lucide.createIcons();
-
-  const heroPhotos=[...document.querySelectorAll('.hero-photo')];
-  if(heroPhotos.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
-    let activePhoto=0;
-    window.setInterval(()=>{
-      if(document.hidden) return;
-      heroPhotos[activePhoto].classList.remove('is-active');
-      activePhoto=(activePhoto+1)%heroPhotos.length;
-      heroPhotos[activePhoto].classList.add('is-active');
-    },8000);
-  }
 
   // ---------- FEATURED PROJECTS ----------
 const projects=[
@@ -37,14 +26,4 @@ if(grid){
     </a>`).join('');
 }
 
-  // ---------- GSAP REVEALS ----------
-  if(window.gsap && window.ScrollTrigger){
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.utils.toArray('.reveal').forEach(el=>{
-      gsap.fromTo(el,{opacity:0,y:40},{opacity:1,y:0,duration:1,ease:'power3.out',
-        scrollTrigger:{trigger:el,start:'top 88%'}});
-    });
-    gsap.from('.hero-content h1',{opacity:0,y:60,duration:1.2,delay:.3,ease:'power3.out'});
-    gsap.from('.hero-sub, .hero-desc, .hero-cta',{opacity:0,y:30,duration:1,stagger:.12,delay:.6,ease:'power3.out'});
-  }
-});
+})();

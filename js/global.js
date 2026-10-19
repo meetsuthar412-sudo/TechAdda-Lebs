@@ -1,7 +1,57 @@
 /* ============ GLOBAL: NAV, CURSOR, REVEAL, LOADER ============ */
-document.addEventListener('DOMContentLoaded',()=>{
+const loader=document.querySelector('.loader');
+setTimeout(()=>loader?.classList.add('done'),520);
+const pageScript=document.currentScript;
+const prefersReducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const useAmbientArt=
+  pageScript&&
+  !matchMedia('(max-width: 767px)').matches&&
+  !prefersReducedMotion.matches;
+
+if(pageScript){
+  const ambientLogo=document.createElement('img');
+  ambientLogo.className='ambient-logo';
+  ambientLogo.alt='';
+  ambientLogo.setAttribute('aria-hidden','true');
+  ambientLogo.decoding='async';
+  ambientLogo.src=new URL('../assets/brand/tech-jugaad-logo.png',pageScript.src).href;
+  ambientLogo.addEventListener('error',()=>ambientLogo.remove(),{once:true});
+  document.body.prepend(ambientLogo);
+}
+
+if(useAmbientArt){
+  const ambientArt=document.createElement('img');
+  ambientArt.className='ambient-art';
+  ambientArt.alt='';
+  ambientArt.setAttribute('aria-hidden','true');
+  ambientArt.decoding='async';
+  ambientArt.src=new URL('../assets/brand/ambient-tech.svg',pageScript.src).href;
+  ambientArt.addEventListener('error',()=>ambientArt.remove(),{once:true});
+  document.body.prepend(ambientArt);
+  prefersReducedMotion.addEventListener('change',event=>{
+    if(event.matches) ambientArt.remove();
+  });
+}
+window.addEventListener('load',()=>{
+  if(window.lucide) window.lucide.createIcons();
+},{once:true});
+
+(()=>{
   // Loader
-  setTimeout(()=>document.querySelector('.loader')?.classList.add('done'),800);
+  document.addEventListener('click',event=>{
+    if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey) return;
+    const link=event.target instanceof Element?event.target.closest('a[href]'):null;
+    if(!link||link.target||link.hasAttribute('download')) return;
+    const destination=new URL(link.href,location.href);
+    if(destination.origin!==location.origin||destination.pathname===location.pathname) return;
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches||!loader) return;
+    event.preventDefault();
+    loader.classList.remove('done');
+    setTimeout(()=>location.assign(destination.href),160);
+  });
+  window.addEventListener('pageshow',event=>{
+    if(event.persisted) loader?.classList.add('done');
+  });
 
   // Nav scroll state
   const nav=document.querySelector('.nav');
@@ -43,7 +93,11 @@ document.addEventListener('DOMContentLoaded',()=>{
   const io=new IntersectionObserver(entries=>{
     entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
   },{threshold:.12});
-  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el=>io.observe(el));
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el=>{
+    const bounds=el.getBoundingClientRect();
+    if(bounds.top<innerHeight&&bounds.bottom>0) el.classList.add('in');
+    io.observe(el);
+  });
 
   // Magnetic buttons
   document.querySelectorAll('.btn').forEach(btn=>{
@@ -68,4 +122,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   },{threshold:.4});
   counters.forEach(c=>cio.observe(c));
-});
+})();

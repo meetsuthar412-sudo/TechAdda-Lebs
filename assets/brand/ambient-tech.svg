@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <radialGradient id="cyan-glow">
+      <stop stop-color="#4BC8ED" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#4BC8ED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gold-glow">
+      <stop stop-color="#D6A94A" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#D6A94A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="micro-grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#E5E7EB" fill-opacity=".13"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#micro-grid)"/>
+  <ellipse cx="1190" cy="390" rx="460" ry="350" fill="url(#cyan-glow)"/>
+  <ellipse cx="350" cy="700" rx="370" ry="270" fill="url(#gold-glow)"/>
+  <g stroke="#4BC8ED" stroke-opacity=".2" stroke-width="1.2">
+    <path d="M0 214h168l52 52h143l46 46h122l38 38h170l58-58h98l50-50h133l60 60h225l48-48h187"/>
+    <path d="M0 643h140l48-48h116l55-55h151l60 60h116l47 47h115l56-56h136l52 52h174l60-60h234"/>
+    <path d="M510 0v124l44 44v102l-55 55v112l55 55v78"/>
+    <path d="M1126 0v108l-50 50v140l62 62v104l-42 42v98"/>
+    <path d="M1440 0v120l-52 52v118l54 54v166"/>
+  </g>
+  <g stroke="#D6A94A" stroke-opacity=".19" stroke-width="1.15">
+    <path d="M0 370h246l52-52h125l44 44h130l46-46h145l64 64h124l52-52h158l55 55h154l55-55h150"/>
+    <path d="M0 782h230l45-45h127l54 54h192l48-48h140l58 58h110l58-58h176l48 48h186l52-52h76"/>
+    <path d="M814 0v144l45 45v105l-51 51v116l62 62v77"/>
+    <path d="M1320 0v186l-46 46v108l57 57v120"/>
+  </g>
+  <g fill="#4BC8ED">
+    <circle cx="363" cy="312" r="3"/>
+    <circle cx="719" cy="437" r="3"/>
+    <circle cx="1138" cy="252" r="3"/>
+    <circle cx="783" cy="724" r="3"/>
+  </g>
+  <g fill="#D6A94A">
+    <circle cx="467" cy="360" r="3"/>
+    <circle cx="1042" cy="534" r="3"/>
+    <circle cx="1473" cy="370" r="3"/>
+    <circle cx="402" cy="791" r="3"/>
+  </g>
+  <g fill="#4BC8ED">
+    <circle cx="363" cy="312" r="12" fill="url(#cyan-glow)"/>
+    <circle cx="719" cy="437" r="12" fill="url(#cyan-glow)"/>
+    <circle cx="1138" cy="252" r="12" fill="url(#cyan-glow)"/>
+    <circle cx="783" cy="724" r="12" fill="url(#cyan-glow)"/>
+  </g>
+  <g fill="#D6A94A">
+    <circle cx="467" cy="360" r="12" fill="url(#gold-glow)"/>
+    <circle cx="1042" cy="534" r="12" fill="url(#gold-glow)"/>
+    <circle cx="1473" cy="370" r="12" fill="url(#gold-glow)"/>
+    <circle cx="402" cy="791" r="12" fill="url(#gold-glow)"/>
+  </g>
+  <g stroke-width="2" stroke-linecap="round" stroke-dasharray="2 28">
+    <path d="M5 214h168l52 52h143l46 46h122l38 38h170l58-58h98l50-50h133l60 60h225l48-48h187" stroke="#70D7F3" stroke-opacity=".68">
+      <animate attributeName="stroke-dashoffset" values="0;-180" dur="11s" repeatCount="indefinite"/>
+    </path>
+    <path d="M5 782h225l45-45h127l54 54h192l48-48h140l58 58h110l58-58h176l48 48h186l52-52h76" stroke="#E8C56F" stroke-opacity=".6">
+      <animate attributeName="stroke-dashoffset" values="0;160" dur="13s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#E5E7EB" fill-opacity=".46">
+    <circle cx="150" cy="104" r="1.4"><animate attributeName="opacity" values=".15;.7;.15" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="924" cy="132" r="1.2"><animate attributeName="opacity" values=".7;.15;.7" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="1260" cy="716" r="1.4"><animate attributeName="opacity" values=".2;.8;.2" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="581" cy="806" r="1.2"><animate attributeName="opacity" values=".7;.15;.7" dur="4.5s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

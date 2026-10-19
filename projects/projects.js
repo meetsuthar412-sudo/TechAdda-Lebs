@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+(()=>{
   if(window.lucide) lucide.createIcons();
   const projects=[
     {
@@ -206,4 +206,4 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.getElementById('modal-close').addEventListener('click',closeModal);
   modal.addEventListener('click',e=>{if(e.target===modal) closeModal()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape') closeModal()});
-});
+})();

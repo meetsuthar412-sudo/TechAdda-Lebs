@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+(()=>{
   const posts=[
     {c:'ai',cat:'AI',t:'How AI Is Changing Modern Business Applications',d:'From support bots to internal tools — AI is reshaping how businesses operate.',d2:'Sep 2026',image:'../assets/visuals/blog/blog-ai-business.svg'},
     {c:'saas',cat:'SaaS',t:'Building Better SaaS Products',d:'What separates a SaaS that grows from one that stalls — architecture, UX, and pricing.',d2:'Aug 2026',image:'../assets/visuals/blog/blog-saas.svg'},
@@ -26,4 +26,4 @@ document.addEventListener('DOMContentLoaded',()=>{
       g.querySelectorAll('.blog-card').forEach(c=>c.classList.toggle('hide',f!=='all'&&c.dataset.c!==f));
     });
   });
-});
+})();

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+(()=>{
   if(window.lucide) lucide.createIcons();
   const services=[
     {n:'01',i:'code-2',t:'Software Development',d:'Custom software systems built around your business requirements — not the other way around.',tags:['Custom systems','Internal tools','Integrations','APIs']},
@@ -24,4 +24,4 @@ document.addEventListener('DOMContentLoaded',()=>{
       </div>`).join('');
     if(window.lucide) lucide.createIcons();
   }
-});
+})();

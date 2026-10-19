@@ -31,7 +31,7 @@
 .modal h2{font-size:2rem;margin-bottom:10px}
 .modal .modal-cat{color:var(--accent);font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:block}
 .modal-section{margin-top:30px;padding-top:30px;border-top:1px solid var(--border)}
-.modal-section h4{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;font-weight:500;font-family:'Inter',sans-serif}
+.modal-section h4{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;font-weight:500;font-family:system-ui,sans-serif}
 .modal-section ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .modal-section li{padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;font-size:.9rem}
 @media(max-width:640px){.modal-inner{padding:30px 20px}.modal-section ul{grid-template-columns:1fr}}

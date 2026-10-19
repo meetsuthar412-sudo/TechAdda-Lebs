@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+(()=>{
   const items=[
     {c:'ai',cat:'AI',t:'AI Social Assistant',d:'Content & engagement AI.',img:'../assets/image/ai-social-assistant.png.png',s:'tall'},
     {c:'web',cat:'Web',t:'E-commerce Management',d:'Unified store dashboard.',img:'../assets/image/e-commerce-management.png.png',s:'wide'},
@@ -29,4 +29,4 @@ document.addEventListener('DOMContentLoaded',()=>{
       m.querySelectorAll('.m-item').forEach(it=>it.classList.toggle('hide',f!=='all'&&it.dataset.c!==f));
     });
   });
-});
+})();

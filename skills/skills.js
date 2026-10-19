@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+(()=>{
   if(window.lucide) lucide.createIcons();
   const cats=[
     {i:'brain-circuit',t:'AI & Machine Learning',s:'Building AI products with modern LLM tooling.',skills:['Python','OpenAI APIs','LLM Applications','Prompt Engineering','RAG','LangChain','Vector Databases','Embeddings','AI Agents']},
@@ -15,4 +15,4 @@ document.addEventListener('DOMContentLoaded',()=>{
       <div class="skill-cloud">${c.skills.map(s=>`<div class="skill-pill"><span>${s}</span></div>`).join('')}</div>
     </div>`).join('');
   if(window.lucide) lucide.createIcons();
-});
+})();
